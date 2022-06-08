@@ -27,12 +27,12 @@ buttonAdd.addEventListener("click"),(e)=>{
 }
 function addEvent(){
     if(eventName.value ===""|| eventDate.value===""){
-      
+        window.alert("Ingrese el nombre del evento");
         return;
        
     }
     if(dateDiff(eventDate.value)<0){
-      //  console.log("deberia funcionar dateDiff");
+        window.alert("Ingrese una fecha mayor a la de hoy");
         return;
     }
     const newEvent={
